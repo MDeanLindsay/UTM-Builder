@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
+header {
+  padding-top: 25px;
+  position: relative;
+}
 
-textarea#utm {
-    width: 80%;
-    height: 2em;
+body {
+
+font-family: barlow;
+margin: auto;
+width: 50%;
+padding: 10px;
 }
 
 input {
@@ -14,14 +21,6 @@ input {
 select {
     width: 80%;
     height: 2em;
-}
-
-body {
-position: centre;
-font-family: barlow;
-margin: auto;
-    width: 50%;
-    padding: 10px;
 }
 
 button {

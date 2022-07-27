@@ -8,19 +8,19 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <title>Shelter UTM & QR Builder</title>
-
+        <header>
         <h1>PNA UTM Code Builder</h1>
         
         <p>Need something added? <a href="mailto:michael_lindsay@craftsamericana.com"> request it</a>
-        
-        <div class="input">
-        <label for="url-input"><strong>URL</strong></label> - This should be the target page.</br>
-        <input onkeyup="createUtm()" id="url-input" type="text" name="" placeholder="e.g. https://www.knitpicks.com/sales/specific_sale_thing/" required>
-        <span class="bar"></span>
-        </div>
-      </br>
+    </header>
     </head>
     <body>
+        <div class="input">
+            <label for="url-input"><strong>URL</strong></label> - This should be the target page.</br>
+            <input onkeyup="createUtm()" id="url-input" type="text" name="" placeholder="e.g. https://www.knitpicks.com/sales/specific_sale_thing/" required>
+            <span class="bar"></span>
+        </div>
+        </br>
         <div class="input">
           <label for="source-input"><strong>Source</strong></label> - What platform? (Email, Facebook, Youtube, etc.)
           <select name="" value="" id="source-input" type="select">
@@ -36,7 +36,6 @@
           </select>
         </div>
       </br>
-
         <div class="input">
           <label for="medium-input"><strong>Medium</strong></label> - How is it being shared?
           <select name="" value="" id="medium-input" type="select" placeholder="Required.">
@@ -47,7 +46,7 @@
         </div>
       </br>
         <div class="input">
-          <label for="medium-input"><strong>Campaign</strong></label> - The actual campaign. (e.g. KBE220101, KBIRTHDAY, etc.)
+          <label for="medium-input"><strong>Campaign</strong></label> - What the campaign is called. (e.g. KBE220101, KBIRTHDAY, etc.)
         <input onkeyup="createUtm()" id="campaign-input" type="text" name="" value="" required>
         <span class="bar"></span>
         </div>
