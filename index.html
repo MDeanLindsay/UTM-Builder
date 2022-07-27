@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+        <link rel="preload, stylesheet" as="font" crossorigin="crossorigin" href="https://fonts.googleapis.com/css?family=Lato:300&display=swap">
+        <script defer  language="JavaScript" type="text/javascript" src="./main.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Shelter UTM & QR Builder</title>
+
+        <h1>PNA UTM Code Builder</h1>
+        
+        <p>Need something added? <a href="mailto:michael_lindsay@craftsamericana.com"> request it</a>
+        
+        <div class="input">
+        <label for="url-input"><strong>URL</strong></label> - This should be the target page.</br>
+        <input onkeyup="createUtm()" id="url-input" type="text" name="" placeholder="e.g. https://www.knitpicks.com/sales/specific_sale_thing/" required>
+        <span class="bar"></span>
+        </div>
+      </br>
+    </head>
+    <body>
+        <div class="input">
+          <label for="source-input"><strong>Source</strong></label> - What platform? (Email, Facebook, Youtube, etc.)
+          <select name="" value="" id="source-input" type="select">
+            <option value=""></option>
+            <option value="klbe">Email Campaign</option>
+            <option value="klae">Email Flow</option>
+            <option value="facebook">Facebook</option>
+            <option value="instagram">Instagram</option>
+            <option value="libsyn">Podcast</option>
+            <option value="pinterest">Pinterest</option>
+            <option value="twitter">Twitter</option>
+            <option value="youtube">Youtube</option>
+          </select>
+        </div>
+      </br>
+
+        <div class="input">
+          <label for="medium-input"><strong>Medium</strong></label> - How is it being shared?
+          <select name="" value="" id="medium-input" type="select" placeholder="Required.">
+            <option value=""></option>
+            <option value="email">Email</option>
+            <option value="social">Social</option>
+          </select>
+        </div>
+      </br>
+        <div class="input">
+          <label for="medium-input"><strong>Campaign</strong></label> - The actual campaign. (e.g. KBE220101, KBIRTHDAY, etc.)
+        <input onkeyup="createUtm()" id="campaign-input" type="text" name="" value="" required>
+        <span class="bar"></span>
+        </div>
+      </br>
+        <div class="input">
+          <label for="content-input"><strong>Content</strong></label> - The sub-campaign descriptor. (i.e. email link, podcast episode, etc.)
+        <input onkeyup="createUtm()" id="content-input" type="text" name="" value="" placeholder=" Optional," required>
+        <span class="bar"></span>
+        </div>
+      </br>
+        <div>
+          <button onclick="myFunction()" input type = "submit">Generate UTM</button>
+          <p id="demo"></h1>
+          <div class="input" id="yourUTM"></div> 
+          <br>
+        </br>
+      </span>
+    </div>
+</html>
