@@ -41,7 +41,6 @@ function addUtmContent() {
     }
   }
 
-  
 function createUtm() {
     let utm = addUrlDecorator() + addUtmSource() + addUtmMedium() + addUtmCampaign() + addUtmContent();
     document.getElementById("utm").value;
@@ -49,13 +48,34 @@ function createUtm() {
   
 let data = addUrlDecorator() + addUtmSource() + addUtmMedium() + addUtmCampaign() + addUtmContent();
   
-  
 function myFunction() {
     document.getElementById("demo").innerHTML = "Your UTM is:";
       if(document.getElementById("source-input").value.length == 0)
       {
-        document.getElementById("yourUTM").innerHTML = "You forgot something important."
+        document.getElementById("yourUTM").innerHTML = "You forgot the source."
+      }
+      if(document.getElementById("medium-input").value.length == 0)
+      {
+        document.getElementById("yourUTM").innerHTML = "You forgot the medium."
+      }
+      if(document.getElementById("campaign-input").value.length == 0)
+      {
+        document.getElementById("yourUTM").innerHTML = "You forgot the campaign."
       }
       else
         document.getElementById("yourUTM").innerHTML = addUrlDecorator() + addUtmSource() + addUtmMedium() + addUtmCampaign() + addUtmContent();
   }
+
+function copyText() {
+  /* Get the text field */
+  copyText = document.getElementById("yourUTM").innerHTML = addUrlDecorator() + addUtmSource() + addUtmMedium() + addUtmCampaign() + addUtmContent();
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  /*alert("Copied the text: " + copyText.value);*/
+}

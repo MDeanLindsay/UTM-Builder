@@ -1,26 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
-
-header {
-  padding-top: 25px;
+html {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
   position: relative;
+  display: block;
 }
 
 body {
+  background-color: #ececed;
+  font-family: "Roboto Mono";
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 12px;
+  margin: 0;
+}
 
-font-family: barlow;
-margin: auto;
-width: 50%;
-padding: 10px;
+.header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.container-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding-top: 0.75rem;
 }
 
 input {
-    width: 80%;
-    height: 2em;
+    width: 25rem;
+    height: 2.2em;
 }
 
 select {
-    width: 80%;
-    height: 2em;
+    width: 25rem;
+    height: 2.2em;
+}
+
+select:invalid { 
+  color: gray; 
 }
 
 button {
