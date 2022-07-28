@@ -6,8 +6,7 @@ html {
   overflow-x: hidden;
   position: relative;
   display: block;
-  background-color: #FAACA8;
-  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
   
 }
 
@@ -28,12 +27,10 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   width: 600px;
   border-radius: 25px;
   background-color: white ;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .header h1 {
@@ -50,13 +47,14 @@ body {
   width: 600px;
   border-radius: 25px;
   background-color: white ;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .container-inputs {
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
+  padding-bottom: 1.25rem;
 }
 
 .input {
@@ -91,13 +89,4 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-  }
-
-  .hide {
-    display: none;
-  }
-      
-  .hovertoshow:hover + .hide {
-    display: block;
-    color: red;
   }
