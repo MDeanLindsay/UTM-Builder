@@ -14,6 +14,9 @@ function addUtmSource() {
     if (utmSource != '') {
       return ('&') + 'utm_source=' + utmSource.split(' ').join('%20')
     }
+    else {
+      return ('')
+    }
   }
   
 function addUtmMedium() {
@@ -21,6 +24,9 @@ function addUtmMedium() {
     if (utmMedium != '') {
       return '&utm_medium=' + utmMedium.split(' ').join('%20')
     } 
+    else {
+      return ('')
+    }
   }
   
 function addUtmCampaign() {
@@ -47,7 +53,7 @@ function createUtm() {
   }
   
 let data = addUrlDecorator() + addUtmSource() + addUtmMedium() + addUtmCampaign() + addUtmContent();
-  
+
 function myFunction() {
     document.getElementById("demo").innerHTML = "Your UTM is:";
       if(document.getElementById("source-input").value.length == 0)
