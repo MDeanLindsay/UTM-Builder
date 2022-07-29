@@ -19,9 +19,9 @@
       <div class = "container">
         <div class = "container-inputs">
          <div class="input">
-            <label for="url-input"><strong>URL</strong></label> - What is the landing page?
+            <strong>URL</strong> - What is the landing page?
             <br>
-            <input onkeyup="createUtm()" id="url-input" type="text" name="" placeholder="https://www.knitpicks.com/sales/specific_sale_thing/" required>
+            <input onclick="myFunction()" id="url-input" type="text" value="" placeholder="https://www.knitpicks.com/sales/specific_sale_thing/">
           </div>
 
           <div class="input">
@@ -44,7 +44,7 @@
         <div class="input">
           <strong>Medium</strong>- How is it being shared?
           <br>
-          <select name="" value="" id="medium-input" type="select" required>
+          <select value="" id="medium-input" type="select" required>
             <option value=""disabled selected hidden>Email, Social, etc.</option>
             <option value="email">Email</option>
             <option value="social">Social</option>
@@ -54,20 +54,22 @@
         <div class="input">
          <strong>Campaign</strong> - What is the campaign called?
           <br>
-          <input onkeyup="createUtm()" id="campaign-input" type="text" name="" value="" placeholder = "KBE220101, KBIRTHDAY, etc." required>
+          <input id="campaign-input" type="text" value="" placeholder = "KBE220101, KBIRTHDAY, etc." required>
         </div>
 
         <div class="input">
           <strong>Content</strong> - Any sub-descriptors?
           <br>
-          <input onkeyup="createUtm()" id="content-input" type="text" name="" value="" placeholder = "shop-now, podcast-ep-01, etc." required>
+          <input id="content-input" type="text" value="" placeholder = "shop-now, podcast-ep-01, etc." required>
         </div>
 
         <div class="input">
-          <button onclick="myFunction()" input type = "submit">Generate UTM</button>
+          <button onclick="myFunction()" type = "button"> Generate UTM </button>
         </div>
         <br>
           <input class="output" id="yourUTM" >
+          <br>
+          <button onclick="copyText()">Copy</button>
         </div>
       </div>
       </div>
