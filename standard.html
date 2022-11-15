@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+        <script defer  language="JavaScript" type="text/javascript" src="./main.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+
+      <div class="header" >
+        <img src="logo.png" alt="crafts group logo" style="width:160px">
+       
+      </div>
+      <div class = "container">
+        <div class = "container-inputs">
+         <div class="input">
+            <strong>URL</strong> - What is the landing page?
+            <br>
+            <input onclick="myFunction()" id="url-input" type="text" value="" placeholder="https://www.knitpicks.com/sales/specific_sale_thing/">
+          </div>
+
+          <div class="input">
+            <strong>Source</strong> - What platform?
+            <br>
+            <select name="" value="" id="source-input" type="select" required>
+              <option value="" disabled selected hidden>Email, Facebook, Youtube, etc.</option>
+              <option value="blog">Blog</option>
+              <option value="klbe">Email Campaign</option>
+              <option value="klae">Email Flow</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="pinterest">Pinterest</option>
+              <option value="libsyn">Podcast</option>
+              <option value="ravelry">Ravelry</option>
+              <option value="twitter">Twitter</option>
+              <option value="youtube">Youtube</option>
+            </select>
+          </div>
+
+        <div class="input">
+          <strong>Medium</strong> - How is it being shared?
+          <br>
+          <select value="" id="medium-input" type="select" required>
+            <option value=""disabled selected hidden>Email, Social, etc.</option>
+            <option value="cpc">CPC</option>
+            <option value="email">Email</option>
+            <option value="social">Social</option>
+          </select>
+        </div>
+
+        <div class="input">
+         <strong>Campaign</strong> - What is the campaign called?
+          <br>
+          <input id="campaign-input" type="text" value="" placeholder = "KBE220101, KBIRTHDAY, etc." required>
+          <select value="" id="campaign-input" type="select" required>
+            <option value=""disabled selected hidden>Email, Social, etc.</option>
+            <option value="blogpost">Blog</option>
+            <option value="fcbk">Facebook Ad</option>
+            <option value="fcbkpost">Facebook Post</option>
+            <option value="instagram">Instagram Ad</option>
+            <option value="instapost">Instagram Post</option>
+            <option value="pinpost">Pinterest Post</option>
+            <option value="podcast">Podcast</option>
+            <option value="ravelry">Ravelry Ad</option>
+            <option value="ravpost">Ravelry Post</option>
+            <option value="twitter">Twitter</option>
+            <option value="youtube">Youtube</option>
+            <option value="tiktok">TikTok</option>
+          </select>
+        </div>
+
+        <div class="input">
+          <strong>Content</strong> - Any sub-descriptors?
+          <br>
+          <input id="content-input" type="text" value="" placeholder = "shop-now, podcast-ep-01, etc." required>
+        </div>
+        <div class="input">
+          <button onclick="myFunction()" type = "button"> Generate UTM </button>
+        </div>
+
+
+        <div class="input">
+          <input id="yourUTM" >
+          <br>
+        </br>
+          <button onclick="copyText()">Copy</button>
+        </div>
+      </div>
+      </div>
+      <div class = "container">
+        <div class = "faq">
+          <p> 
+            <h1>FAQ:</h1>
+            <br>
+            The goal of this is to standardize how we go about tracking engagement and revenue share from our internal marketing efforts. 
+            Going forward, it should be second nature to use this tool before posting public facing links with our content!
+            <br>
+          </p>
+
+          <button class="accordion">What is a UTM Code?</button>
+          <div class="panel">
+          <p>
+              A UTM, in its simplest form, is just a snipppit of code that we add to the end of a link. 
+              This addition lets us know where traffic is coming from and helps better understand the effectiveness of a campaign in the process. 
+              <br><br>
+              In practice, it’s a summation of 4 parts that lets us group traffic in an easy to understand way, so we'll go over them below.
+          </p>
+          </div>
+
+          <button class="accordion">What is a Source?</button>
+          <div class="panel">
+          <p>
+              This paramter (utm_source) definces the source of traffic. 
+              This can be a website name, search engine, newletter name, or social network. 
+              <br><br>
+              The ones we would generally use are listed in a drop down, but if there are others that should be added, <a href="mailto:michael_lindsay@craftsamericana.com">let me know!</a>
+          </p>
+          </div>
+
+          <button class="accordion">What is a Campaign Medium?</button>
+          <div class="panel">
+          <p>
+            This parameter (utm_medium) is used to identify the medium used to share and access a link. 
+            This will only ever be email, social, or cpc (for ads).
+          </p>
+          </div>
+
+          <button class="accordion">What is a Campaign Name?</button>
+          <div class="panel">
+          <p>
+            This parameter (utm_campaign) is used to identify the campaign we are running (or in socials case, the platform we are posting from).
+            <br> <br>
+            In Crafts Group we often refer to this as the Media ID, because this is the part of the UTM code that is tied to an order in Response! 
+            <br> <br>
+            Emails need a unique BE code, but otherwise for socials, it is best practice to use a consistent campagin name! 
+            If you feel that there should be some sort of diferentiation, make sure it’s entered in Response!
+            <br> <br>
+            <b>Note:</b> It’s <i>very important</i> that this be entered into Response before a link is sent out! 
+            If you are unsure how to check, or how to do this in the first place, please reach out via teams to Michael or Ben! 
+            Otherwise our internal order tables won’t know where it came from, and it will be a bit harder to group revenue generated by it.
+          </p>
+          </div>
+
+          <button class="accordion">What is a Campaign Content?</button>
+          <div class="panel">
+          <p>
+            This parameter (utm_content) is used to determine what someone clicked to get to our site when there are multiple links pointing to the same url/campaign.
+            <br><br>
+            In practice this would be:
+            <br>
+            <br>
+            <b>Emails:</b> The specific link inside of an email. (shop-now, specific_sale_link, etc.)
+            <br><br>
+            <b>Podcasts:</b> The episode number. (ep_1, ep2, etc.)
+            <br><br>
+            <b>Youtube:</b> The video title, or a summary. (hand_painting, tubular_cast, etc.)
+            <br><br>
+            <b>Socials:</b> The specific sale or campaign that we are promoting. (summer-yarn-sale, etc.)
+          </p>
+          </div>
+        </div>
+      </div>
+</html>
