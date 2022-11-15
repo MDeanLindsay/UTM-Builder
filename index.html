@@ -27,7 +27,7 @@
             <strong>Source</strong> - What platform?
             <br>
             <select name="" value="" id="source-input" type="select" required>
-              <option value="" disabled selected hidden>Email, Facebook, Youtube, etc.</option>
+              <option value="" disabled selected hidden></option>
               <option value="blog">Blog</option>
               <option value="klbe">Email Campaign</option>
               <option value="klae">Email Flow</option>
@@ -45,7 +45,7 @@
           <strong>Medium</strong> - How is it being shared?
           <br>
           <select value="" id="medium-input" type="select" required>
-            <option value=""disabled selected hidden>Email, Social, etc.</option>
+            <option value=""disabled selected hidden></option>
             <option value="cpc">CPC</option>
             <option value="email">Email</option>
             <option value="social">Social</option>
@@ -55,13 +55,27 @@
         <div class="input">
          <strong>Campaign</strong> - What is the campaign called?
           <br>
-          <input id="campaign-input" type="text" value="" placeholder = "KBE220101, KBIRTHDAY, etc." required>
+          <select value="" id="campaign-input" type="select" required>
+            <option value=""disabled selected hidden></option>
+            <option value="blogpost">Blog</option>
+            <option value="fcbk">Facebook Ad</option>
+            <option value="fcbkpost">Facebook Post</option>
+            <option value="instagram">Instagram Ad</option>
+            <option value="instapost">Instagram Post</option>
+            <option value="pinpost">Pinterest Post</option>
+            <option value="podcast">Podcast</option>
+            <option value="ravelry">Ravelry Ad</option>
+            <option value="ravpost">Ravelry Post</option>
+            <option value="twitter">Twitter</option>
+            <option value="youtube">Youtube</option>
+            <option value="tiktok">TikTok</option>
+          </select>
         </div>
 
         <div class="input">
           <strong>Content</strong> - Any sub-descriptors?
           <br>
-          <input id="content-input" type="text" value="" placeholder = "shop-now, podcast-ep-01, etc." required>
+          <input id="content-input" type="text" value="" required>
         </div>
         <div class="input">
           <button onclick="myFunction()" type = "button"> Generate UTM </button>
