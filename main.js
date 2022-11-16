@@ -49,10 +49,10 @@ function addUtmContent() {
 
 function myFunction() {
   if(document.getElementById("url-input").value.length == 0) {
-    document.getElementById("yourUTM").value = "You forgot the link.";
+    document.getElementById("yourUTM").value = "Please add the link.";
     }
   else if(document.getElementById("campaign-input").value.length == 0) {
-    document.getElementById("yourUTM").value = "You forgot the campaign.";
+    document.getElementById("yourUTM").value = "Please add a campaign name.";
     }
   else {
     document.getElementById("yourUTM").value = addUrlDecorator() + addUtmSource() + addUtmMedium() + addUtmCampaign() + addUtmContent();
