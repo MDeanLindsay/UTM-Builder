@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1.2rem;
 }
 
 .header {
@@ -44,7 +44,6 @@ body {
   align-items: center;
   border-radius: 10px;
   width: 600px;
-  margin-bottom: 2rem;
   background-color: white ;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -54,6 +53,41 @@ body {
   flex-direction: column;
   padding-top: 1rem;
   padding-bottom: 1.25rem;
+}
+
+.page {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-size: 12px;
+}
+
+.page button {
+  background-color: #f40e22;
+  border-style: solid;
+  width: 12em;
+  height: 2.5em;
+  border: none;
+  text-align: center;
+  display: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.page #button1 {
+  border-style: solid;
+  border-color: black;
+  background-color: #f40e22;
+  color: white;
+}
+
+.page #button2 {
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  color: black;
 }
 
 .input {
